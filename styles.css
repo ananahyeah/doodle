@@ -1,0 +1,62 @@
+
+/* Root pane styling */
+.root-pane {
+    -fx-background-color: #FFFFFF; /* White background for the main content */
+    -fx-font-family: "Inter", sans-serif; /* Using Inter font, fallback to sans-serif */
+}
+
+/* Header bar styling (Barclays Navy Blue) */
+.header-bar {
+    -fx-background-color: #002D72; /* Barclays Navy Blue */
+    -fx-padding: 15px 0; /* Padding around the header content */
+    -fx-alignment: center; /* Center content horizontally */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.0, 0, 5); /* Subtle shadow for depth */
+}
+
+/* Header text styling (White) */
+.header-text {
+    -fx-text-fill: #FFFFFF; /* White text for the title */
+    -fx-font-size: 28px; /* Larger font size for the heading */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-alignment: center; /* Ensure text is centered within its label */
+}
+
+/* Upload button styling */
+.upload-button {
+    -fx-background-color: #002D72; /* Barclays Navy Blue */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-size: 18px; /* Larger font size for the button */
+    -fx-padding: 12px 30px; /* Padding inside the button */
+    -fx-background-radius: 8px; /* Rounded corners */
+    -fx-border-radius: 8px;
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.0, 0, 2); /* Subtle shadow */
+    -fx-transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.upload-button:hover {
+    -fx-background-color: #003B91; /* Slightly lighter navy on hover */
+    -fx-scale-x: 1.02; /* Slightly scale up on hover */
+    -fx-scale-y: 1.02;
+}
+
+.upload-button:pressed {
+    -fx-background-color: #001F50; /* Darker navy when pressed */
+    -fx-scale-x: 0.98; /* Slightly scale down when pressed */
+    -fx-scale-y: 0.98;
+}
+
+/* Message label styling */
+#messageLabel {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-color: #F0F0F0; /* Light grey background for message box */
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #D0D0D0; /* Light grey border */
+    -fx-border-width: 1px;
+    -fx-alignment: center; /* Center text within the label */
+    -fx-max-width: 400px; /* Max width for the message label */
+    -fx-text-alignment: center; /* Center text visually */
+}
